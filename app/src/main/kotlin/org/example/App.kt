@@ -18,4 +18,15 @@ fun main() {
     }
 
     println("La función es: f(x) = $mostrarFuncion")
+
+    println("\nTabla de valores:")
+    println("x\tf(x)")
+     for (x in -5..5) {
+        val fx = calcularFuncion(a, b, c, x)
+        println("$x\t$fx")
+    }
+}
+
+fun calcularFuncion(a: Int, b: Int, c: Int, x: Int): Int {
+    return a * x * x + b * x + c
 }
